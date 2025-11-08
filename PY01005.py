@@ -1,6 +1,7 @@
 def check(n):
     for x in range(n):
-        if (x!='4' and x!='7') return 0
+        if (x!='4' and x!='7'):
+            return 0
     return 1
 
 t=int(input())

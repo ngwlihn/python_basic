@@ -18,4 +18,18 @@ print(numbers)
 index_of = numbers.index(1000) # tra ve vi tri cua 1000 trong list
 del numbers[index_of] # xoa
 #numbers.remove('1000')# xoa gtri 1000
-dir(list)
+
+# list in list
+# copy list
+# list slicing -> new list
+
+friend= [[2,3,4], [3, 5, 5]]
+print(type(friend[0]))
+print(friend[0][0])
+list1= friend # gán cả địa chỉ
+list2=list.copy # tạo địa chỉ mới là copy giá trị
+print(list1 is friend) # is thì so sánh về địa chỉ, == so sánh giá trị
+print(list2 is friend)
+arr = [1, 3, 4, 1100]
+new_list = a[0:2:1] # tạo 1 list mới từ list cũ từ 0->2 bước nhảy 1 
+# arr và new_list khác địa chỉ bộ nhớ tương tự copy
