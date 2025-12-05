@@ -1,12 +1,12 @@
-n = int(input())
-a = list(map(int, input().split()))
-
-stack = []
-
-for num in a:
-    if stack and (stack[-1] + num) % 2 == 0:
-        stack.pop()  # loại bỏ cặp có tổng chẵn
+n=int(input())
+a=list(map(int,input().split()))
+stack=[]
+for i in range(n):
+    if not stack:
+        stack.append(a[i])
+        continue
+    if (stack[-1]+a[i])%2==0:
+        stack.pop()
     else:
-        stack.append(num)
-
+        stack.append(a[i])
 print(len(stack))
