@@ -1,6 +1,8 @@
+import math
 for _ in range(int(input())):
     s=input()
-    if len(s)>=2 and s[-1]=='6' and s[-2]=='8':
+    s1=s[::-1]
+    if math.gcd(int(s),int(s1))==1:
         print("YES")
     else:
         print("NO")
